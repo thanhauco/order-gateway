@@ -2,9 +2,14 @@ package proxy
 import (
     "net/http"
     "net/http/httputil"
-    "net/url"
+    "order-gateway/lb"
 )
-func New(target string) http.Handler {
-    u, _ := url.Parse(target)
-    return httputil.NewSingleHostReverseProxy(u)
+func New(l *lb.LoadBalancer) http.Handler {
+    return &httputil.ReverseProxy{
+        Director: func(req *http.Request) {
+            target := l.Next()
+            req.URL.Scheme = target.Scheme
+            req.URL.Host = target.Host
+        },
+    }
 }
