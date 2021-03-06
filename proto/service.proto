@@ -1,0 +1,5 @@
+syntax = "proto3";
+package proto;
+service OrderService { rpc Create (Order) returns (Response); }
+message Order { string id = 1; }
+message Response { bool success = 1; }
