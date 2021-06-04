@@ -1,3 +1,4 @@
 package main
-import _ "net/http/pprof"
-// ... existing
+import "order-gateway/middleware"
+// ... setup
+h := middleware.ZapLogger(p)
