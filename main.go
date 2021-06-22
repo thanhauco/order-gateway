@@ -1,4 +1,4 @@
 package main
-import "order-gateway/middleware"
+import "order-gateway/handlers"
 // ... setup
-h := middleware.ZapLogger(p)
+http.HandleFunc("/health", handlers.Health)
