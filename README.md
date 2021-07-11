@@ -1,15 +1,13 @@
 # Order Gateway
 
 ## Features
-- Reverse Proxy
-- Load Balancing
-- Circuit Breaker (Hystrix)
-- Tracing (OpenTelemetry)
-- gRPC Support
-- Hot Reload
-- Consul Discovery
-- mTLS
-- Distributed Cache
+- Enterprise V3 Features
+- Zap Logging
+- Gzip Compression
+- CORS Middleware
+- Viper Configuration
+- Pprof Profiling
+- Goroutine Leak Check
 
 ## Status
-Enterprise Ready V3.
+Enterprise Scale V4.
