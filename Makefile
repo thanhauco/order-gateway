@@ -1,4 +1,2 @@
-build:
-	go build -o gateway main.go
-test:
-	go test ./...
+mock:
+	mockery --all
