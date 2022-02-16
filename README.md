@@ -1,13 +1,12 @@
 # Order Gateway
 
 ## Features
-- Enterprise V3 Features
-- Zap Logging
-- Gzip Compression
-- CORS Middleware
-- Viper Configuration
-- Pprof Profiling
-- Goroutine Leak Check
+- Enterprise V4 Features
+- Go 1.18 Generics
+- GitHub Actions
+- GolangCI-Lint
+- OpenTelemetry
+- Testify & Mockery
 
 ## Status
-Enterprise Scale V4.
+Modernized V5 (2022).
